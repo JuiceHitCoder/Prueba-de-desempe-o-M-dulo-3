@@ -46,6 +46,7 @@ The SPA Authentication System is designed to provide a seamless and secure user 
 
 Make sure you have a db.json file in the root of the project with the initial data structure. You can use the following example:
 
+bash```
 {
   "users": [
     {
@@ -65,6 +66,26 @@ Make sure you have a db.json file in the root of the project with the initial da
   ]
 }
 
+
+```
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "6c3b6e6e4b6c2c1b9b419911cfef95c0d6c6e3c7b2e3e8e2e3e3e8e2e3e3e8e2",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "bcb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+      "role": "user"
+    }
+  ]
+}
 ## Usage
 
 1. Start the development servers and json-server:
