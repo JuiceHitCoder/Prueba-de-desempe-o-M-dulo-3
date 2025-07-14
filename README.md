@@ -64,28 +64,8 @@ bash```
       "role": "user"
     }
   ]
-}
+}```
 
-
-```
-{
-  "users": [
-    {
-      "id": 1,
-      "username": "admin",
-      "email": "admin@example.com",
-      "password": "6c3b6e6e4b6c2c1b9b419911cfef95c0d6c6e3c7b2e3e8e2e3e3e8e2e3e3e8e2",
-      "role": "admin"
-    },
-    {
-      "id": 2,
-      "username": "user1",
-      "email": "user1@example.com",
-      "password": "bcb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
-      "role": "user"
-    }
-  ]
-}
 ## Usage
 
 1. Start the development servers and json-server:
@@ -98,7 +78,7 @@ bash```
 
 
 ## Project Structure
-
+bash```
 my-spa-project/
 ├── index.html                    # Main page
 ├── package.json                  # Dependency configuration
@@ -111,7 +91,7 @@ my-spa-project/
     ├── controllers/              # Page logic and tools (authentication, API, CRUD)
     ├── pages/                    # HTML pages (login, register, dashboard, etc.)
     ├── routers/                  # Routing system
-    └── utils/                    # Utilities (authentication, validations, notifications)
+    └── utils/                    # Utilities (authentication, validations, notifications)```
 
 ## License
 
