@@ -80,7 +80,8 @@ bash
 
 
 ## Project Structure
-bash```
+bash
+```
 my-spa-project/
 ├── index.html                    # Main page
 ├── package.json                  # Dependency configuration
@@ -93,7 +94,8 @@ my-spa-project/
     ├── controllers/              # Page logic and tools (authentication, API, CRUD)
     ├── pages/                    # HTML pages (login, register, dashboard, etc.)
     ├── routers/                  # Routing system
-    └── utils/                    # Utilities (authentication, validations, notifications)```
+    └── utils/                    # Utilities (authentication, validations, notifications)
+```
 
 ## License
 
