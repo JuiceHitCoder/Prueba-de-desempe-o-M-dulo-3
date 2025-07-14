@@ -46,7 +46,8 @@ The SPA Authentication System is designed to provide a seamless and secure user 
 
 Make sure you have a db.json file in the root of the project with the initial data structure. You can use the following example:
 
-bash```
+bash
+```
 {
   "users": [
     {
@@ -64,7 +65,8 @@ bash```
       "role": "user"
     }
   ]
-}```
+}
+```
 
 ## Usage
 
