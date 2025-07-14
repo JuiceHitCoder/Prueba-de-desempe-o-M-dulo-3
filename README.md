@@ -31,7 +31,7 @@ The SPA Authentication System is designed to provide a seamless and secure user 
 
 1. Clone the repository to your local machine:
 
-   git clone https://github.com/JuiceHitCoder/Prueba-de-desempe-o-M-dulo-3.git
+   git clone JuiceHitCoder/Prueba-de-desempe-o-M-dulo-3
    cd my-spa-project
 
 2. Install the necessary dependencies:
