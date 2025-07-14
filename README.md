@@ -1,62 +1,101 @@
-# Prueba-modulo-3
-# Sistema de Autenticación SPA
+## SPA Authentication System
 
-Este proyecto es una aplicación de una sola página (SPA) que implementa un sistema de autenticación con roles de usuario, utilizando Vite para el frontend y json-server para simular una base de datos backend.
+This project is a single-page application (SPA) that implements an authentication system with user roles, using Vite for the frontend and json-server to simulate a backend database.
 
-## Características
+## Description
 
-- Registro e inicio de sesión de usuarios.
-- Dos roles de usuario: administrador y usuario.
-- Protección de rutas basada en roles.
-- Persistencia de sesión utilizando Local Storage.
-- Hashing de contraseñas con SHA-256 para seguridad.
-- Sistema de rutas básico para navegación en la SPA.
+The SPA Authentication System is designed to provide a seamless and secure user authentication experience. It allows users to register, log in, and access different parts of the application based on their roles. This project serves as a foundation for understanding how to implement secure authentication in a single-page application.
 
-## Requisitos Previos
+## Features
 
-- Node.js
-- npm (Node Package Manager)
+   - User registration and login.
+   - Two user roles: administrator and user.
+   - Route protection based on roles.
+   - Session persistence using Local Storage.
+   - Password hashing with SHA-256 for security.
+   - Basic routing system for SPA navigation.
 
-## Instalación
+## Technologies Used
 
-1. Clona el repositorio en tu máquina local:
+- **Vite**: A modern frontend build tool that significantly improves the development experience.
+- **json-server**: A simple tool to create a REST API with zero coding, used here to simulate a backend database.
+- **Local Storage**: Used for session persistence to maintain user login state across page reloads.
+- **SHA-256**: A cryptographic hash function used to secure user passwords.
 
-   ```bash
-   git clone <URL_DEL_REPOSITORIO>
-   cd mi-proyecto-spa
-   
-2. Instala las dependencias necesarias:
-    npm install
-Instala json-server y concurrently como dependencias de desarrollo:
-    npm install -D json-server concurrently
+## Prerequisites
 
-## Configuración
+   - Node.js
+   - npm (Node Package Manager)
 
-Asegúrate de tener un archivo db.json en la raíz del proyecto con la estructura de datos inicial.
+## Installation
 
-## Uso
+1. Clone the repository to your local machine:
 
-Inicia los servidores de desarrollo y json-server:
+   git clone <REPOSITORY_URL>
+   cd my-spa-project
 
-  npm run start\:dev
+2. Install the necessary dependencies:
 
-Abre tu navegador y navega a http://localhost:5173 para ver la aplicación en acción.
+   npm install
 
-Utiliza el formulario de registro para crear una nueva cuenta o inicia sesión con una cuenta existente.
+3.Install json-server and concurrently as development dependencies:
 
-## Estructura del Proyecto
+   npm install -D json-server concurrently
 
-mi-proyecto-spa/
-├── index.html                    # Página principal
-├── package.json                  # Configuración de dependencias
-├── db.json                       # Base de datos simulada
-├── .gitignore                    # Archivos a ignorar
+## Configuration
+
+Make sure you have a db.json file in the root of the project with the initial data structure. You can use the following example:
+
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "email": "admin@example.com",
+      "password": "6c3b6e6e4b6c2c1b9b419911cfef95c0d6c6e3c7b2e3e8e2e3e3e8e2e3e3e8e2",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "username": "user1",
+      "email": "user1@example.com",
+      "password": "bcb1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1b1",
+      "role": "user"
+    }
+  ]
+}
+
+## Usage
+
+1. Start the development servers and json-server:
+
+   npm run start:dev
+
+2. Open your browser and navigate to http://localhost:5173 to see the application in action.
+
+3. Use the registration form to create a new account or log in with an existing account.
+
+
+## Project Structure
+
+my-spa-project/
+├── index.html                    # Main page
+├── package.json                  # Dependency configuration
+├── db.json                       # Simulated database
+├── .gitignore                    # Files to ignore
 ├── public/
 │   └── css/
-│       └── main.css             # Estilos generales
+│       └── main.css              # General styles
 └── src/
-    ├── controllers/             # Lógica de paginas y herramientas (autenticación, API, CRUD)
-    ├── pages/                   # Páginas HTML (login, registro, dashboard, etc.)
-    ├── routers/                 # Sistema de rutas
-    └── utils/                   # Utilidades (autenticación, validaciones, notificaciones)
+    ├── controllers/              # Page logic and tools (authentication, API, CRUD)
+    ├── pages/                    # HTML pages (login, register, dashboard, etc.)
+    ├── routers/                  # Routing system
+    └── utils/                    # Utilities (authentication, validations, notifications)
 
+## License
+
+This project is licensed under the MIT License. See the LICENSE file for more details.
+
+## Authors
+
+   Nelson Salcedo Baldovino
